@@ -1,0 +1,9 @@
+flowchart TD
+    A[Start] --> B(Num1
+    Num2
+    Num3) --> C(Total=Num1+Num2+Num3) --> D(Average=Total/3)
+    D --> E{If Average =< 75}
+    E -->|Yes| F[You Failed]
+    E -->|No| G[You Passed]
+    F --> End
+    G --> End
