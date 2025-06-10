@@ -4,13 +4,13 @@ flowchart TD
     C --> D[Application Screening]
     D -->|Passed| E{Initial Interview HR/Recruiter}
     D -->|Failed| Z1[Reject Applicant]
-    E -->|Passed| F[Hiring Manager Interview]
+    E -->|Passed| F{Hiring Manager Interview}
     E -->|Failed| Z1
-    F -->|Passed| G[Reference & Background Check]
+    F -->|Passed| G{Reference & Background Check}
     F -->|Failed| Z1
-    G -->|Clear| H[Assessment if applicable]
+    G -->|Clear| H{Assessment if applicable}
     G -->|Failed| Z1
-    H -->|Passed| I[Job Offer & Negotiation]
+    H -->|Passed| I{Job Offer & Negotiation}
     H -->|Failed| Z1
     I -->|Accepted| J[Pre-employment Requirements]
     I -->|Declined| Z2[Keep on Talent Pool]
