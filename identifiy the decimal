@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+func main() {
+	limit := 3.5
+	var counter float64
+	for counter <= limit {
+
+		if counter+1 > limit {
+			decimalValue := limit - counter
+			if decimalValue > 0 {
+				fmt.Println("With decimal value")
+			} else {
+				fmt.Println("No decimal value to display")
+			}
+		}
+
+		counter++
+	}
+}
